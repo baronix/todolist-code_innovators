@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Gabriel\\todolist-code_innovators\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|c:\\users\\gabriel\\todolist-code_innovators\\todolist\\views\\todo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\views\\todo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|c:\\users\\gabriel\\todolist-code_innovators\\todolist\\todolist.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\todolist.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\Views\\Todo\\Index.cshtml",
+              "RelativeDocumentMoniker": "ToDoList\\Views\\Todo\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\Views\\Todo\\Index.cshtml",
+              "RelativeToolTip": "ToDoList\\Views\\Todo\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T13:29:30.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ToDoList",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\ToDoList.csproj",
+              "RelativeDocumentMoniker": "ToDoList\\ToDoList.csproj",
+              "ToolTip": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\ToDoList.csproj",
+              "RelativeToolTip": "ToDoList\\ToDoList.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-05T13:29:20.334Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
