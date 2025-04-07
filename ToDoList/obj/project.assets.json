@@ -55,23 +55,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gabriel\\.nuget\\packages\\": {},
+    "C:\\Users\\andre\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\ToDoList.csproj",
+      "projectUniqueName": "C:\\Users\\andre\\todolist-code_innovators\\ToDoList\\ToDoList.csproj",
       "projectName": "ToDoList",
-      "projectPath": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\ToDoList.csproj",
-      "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\obj\\",
+      "projectPath": "C:\\Users\\andre\\todolist-code_innovators\\ToDoList\\ToDoList.csproj",
+      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\andre\\todolist-code_innovators\\ToDoList\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
