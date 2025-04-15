@@ -1,0 +1,68 @@
+using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml;
+using ToDoListApp.Model;
+// ------------------------------------------------------------------
+namespace ToDoListApp.Controller
+{
+    class TarefaController
+    {
+        private const string filePath = "todos.json";
+        private List<Model.TarefaModel> tarefas; 
+
+        public TarefaController()
+        {
+            tarefas = CarregarTarefas();
+        }
+        // ------------------------------------------------------------------
+        public List<Model.TarefaModel> ObterTodas()
+        {
+            return tarefas;
+        }
+        // ------------------------------------------------------------------
+        public void Adicionar(string descricao)
+        {
+
+            tarefas.Add(new Model.TarefaModel { Descricao = descricao });
+
+            GuardarTarefas();
+        }
+        // ------------------------------------------------------------------
+        public void Editar(Guid id, string novaDescricao)
+        {
+            var tarefa = tarefas.Find(t => t.Id == id);
+            if (tarefa != null)
+            {
+                tarefa.Descricao = novaDescricao;
+                GuardarTarefas();
+            }
+        }
+        // ------------------------------------------------------------------
+        public void Apagar(Guid id)
+        {
+            tarefas.RemoveAll(t => t.Id == id);
+            GuardarTarefas();
+        }
+        // ------------------------------------------------------------------
+        private List<Model.TarefaModel> CarregarTarefas()
+        {
+            if (!File.Exists(filePath))
+                return new List<Model.TarefaModel>();
+
+            string json = File.ReadAllText(filePath);
+            return JsonConvert.DeserializeObject<List<Model.TarefaModel>>(json) ?? new List<Model.TarefaModel>();
+        }
+        // ------------------------------------------------------------------
+        private void GuardarTarefas()
+        {
+            string json = JsonConvert.SerializeObject(tarefas, Newtonsoft.Json.Formatting.Indented);
+            File.WriteAllText(filePath, json);
+        }
+        // ------------------------------------------------------------------
+    }
+}
