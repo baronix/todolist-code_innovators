@@ -96,6 +96,15 @@ namespace ToDoList.Controllers
             {
                 Directory.CreateDirectory(directory);
             }
+            //  Alteração 16-04-2025, verificação de ficheiro 
+            else
+            {
+                  // Verifica se o ficheiro existe, senão cria um ficheiro vazio
+                   if (!System.IO.File.Exists(_dataFilePath))
+                   { 
+                        System.IO.File.Create(_dataFilePath).Dispose(); 
+                   }
+            }
         }
     }
 }
