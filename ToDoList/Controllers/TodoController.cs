@@ -92,7 +92,7 @@ namespace ToDoList.Controllers
         private void EnsureDirectoryExists()
         {
             var directory = Path.GetDirectoryName(_dataFilePath);
-            if (directory != null && !Directory.Exists(directory)) //Verfificador::confirma se existe
+            if (directory != null && !Directory.Exists(directory)) //Verificador::confirma se existe
             {
                 _ = Directory.CreateDirectory(directory);
             }
