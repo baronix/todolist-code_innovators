@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -92,18 +92,18 @@ namespace ToDoList.Controllers
         private void EnsureDirectoryExists()
         {
             var directory = Path.GetDirectoryName(_dataFilePath);
-            if (!Directory.Exists(directory))
+            if (directory != null && !Directory.Exists(directory)) //Verfificador::confirma se existe
             {
-                Directory.CreateDirectory(directory);
+                _ = Directory.CreateDirectory(directory);
             }
-            //  Alteração 16-04-2025, verificação de ficheiro 
-            else
+            // Alteração 16-04-2025, verificação de ficheiro 
+            else if (directory != null)
             {
-                  // Verifica se o ficheiro existe, senão cria um ficheiro vazio
-                   if (!System.IO.File.Exists(_dataFilePath))
-                   { 
-                        System.IO.File.Create(_dataFilePath).Dispose(); 
-                   }
+                // Verifica se o ficheiro existe, senão cria um ficheiro vazio
+                if (!System.IO.File.Exists(_dataFilePath))
+                {
+                    System.IO.File.Create(_dataFilePath).Dispose();
+                }
             }
         }
     }
