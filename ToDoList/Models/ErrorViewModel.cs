@@ -1,5 +1,6 @@
 namespace ToDoList.Models
 {
+    // Classe Responsavel pela verificação de strings
     public class ErrorViewModel
     {
         public string? RequestId { get; set; }
