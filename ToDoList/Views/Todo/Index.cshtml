@@ -1,64 +1,145 @@
-﻿@model List<ToDoList.Models.TodoItem>
+﻿
+@model List<ToDoList.Models.TodoItem>
 
-<div class="container">
-    <h2>Minha Lista de Tarefas</h2>
 
-    <div class="row mb-4">
-        <div class="col">
-            <form asp-action="Create" method="post" class="form-inline">
-                <div class="input-group w-100">
-                    <input type="text" name="Title" class="form-control" placeholder="Nova tarefa..." required />
-                    <div class="input-group-append">
-                        <button type="submit" class="btn btn-primary">Adicionar Tarefa</button>
-                    </div>
-                </div>
-            </form>
+<div class="container todo-container">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">
+                <i class="fas fa-tasks me-2"></i>Minha Lista de Tarefas
+            </h2>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col">
-            @if (Model.Count == 0)
-            {
-                <div class="alert alert-info">
-                    Não há tarefas na lista. Adicione uma nova tarefa acima.
+        <div class="card-body">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <form asp-action="Create" method="post" class="todo-form">
+                        <div class="input-group">
+                            <input type="text"
+                                   name="Title"
+                                   class="form-control form-control-lg"
+                                   placeholder="Digite uma nova tarefa..."
+                                   required
+                                   aria-label="Adicionar nova tarefa">
+                            <button type="submit"
+                                    class="btn btn-primary btn-lg"
+                                    title="Adicionar à lista">
+                                <i class="fas fa-plus-circle me-1"></i> Adicionar
+                            </button>
+                        </div>
+                    </form>
                 </div>
-            }
-            else
-            {
-                <ul class="list-group">
-                    @foreach (var todo in Model)
+            </div>
+
+            @* Task list section *@
+            <div class="row">
+                <div class="col-12">
+                    @* Check if there are no tasks *@
+                    @if (Model.Count == 0)
                     {
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <div>
-                                @if (todo.IsComplete)
-                                {
-                                    <span style="text-decoration: line-through;">@todo.Title</span>
-                                }
-                                else
-                                {
-                                    <span>@todo.Title</span>
-                                }
-                                <small class="text-muted ml-2">
-                                    Criado em: @todo.CreatedAt.ToString("dd/MM/yyyy HH:mm")
-                                </small>
-                            </div>
-                            <div>
-                                <form asp-action="ToggleComplete" method="post" style="display: inline;">
-                                    <input type="hidden" name="id" value="@todo.Id" />
-                                    <button type="submit" class="btn btn-sm @(todo.IsComplete ? "btn-secondary" : "btn-success")">
-                                        @(todo.IsComplete ? "Reabrir" : "Concluir")
-                                    </button>
-                                </form>
-                                <form asp-action="Delete" method="post" style="display: inline;">
-                                    <input type="hidden" name="id" value="@todo.Id" />
-                                    <button type="submit" class="btn btn-sm btn-danger">Excluir</button>
-                                </form>
-                            </div>
-                        </li>
+                        @* Mensagem vazia *@
+                        <div class="alert alert-info text-center py-3">
+                            <i class="fas fa-info-circle me-2"></i>
+                            Sua lista está vazia. Comece adicionando uma tarefa acima.
+                        </div>
                     }
-                </ul>
-            }
+                    else
+                    {
+                        @* Task list container *@
+                        <div class="todo-list">
+                            @* Loop through each task *@
+                            @foreach (var todo in Model)
+                            {
+                                @* Individual task item with relative positioning *@
+                                <div class="todo-item card mb-2 @(todo.IsComplete ? "border-success" : "") position-relative">
+                                    <form asp-action="Delete" method="post" class="position-absolute top-0 end-0 mt-1 me-1">
+                                        <input type="hidden" name="id" value="@todo.Id" />
+                                        @* Confirmação *@
+                                        <button type="submit"
+                                                class="btn btn-sm btn-close"
+                                                onclick="return confirm('Tem certeza que deseja excluir esta tarefa?')"
+                                                title="Excluir tarefa"
+                                                aria-label="Excluir">
+                                        </button>
+                                    </form>
+
+                                    @* conteudo da task *@
+                                    <div class="card-body py-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center flex-grow-1">
+                                                <div class="form-check me-3">
+                                                    <form asp-action="ToggleComplete" method="post" class="m-0">
+                                                        <input type="hidden" name="id" value="@todo.Id" />
+                                                        <button type="submit"
+                                                                class="btn btn-sm @(todo.IsComplete ? "btn-outline-success" : "btn-outline-secondary")"
+                                                                title="@(todo.IsComplete ? "Marcar como pendente" : "Marcar como concluída")">
+                                                            <i class="@(todo.IsComplete ? "fas fa-check-circle" : "far fa-circle")"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+
+                                                
+                                                <div class="flex-grow-1 pe-2">
+                                                    <span class="todo-title @(todo.IsComplete ? "completed" : "")">
+                                                        @todo.Title
+                                                    </span>
+                                                    <div class="todo-meta text-muted small mt-1">
+                                                        <i class="far fa-clock me-1"></i>
+                                                        <span>@todo.CreatedAt.ToString("dd/MM/yyyy HH:mm")</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+<style>
+
+    .todo-container {
+        max-width: 800px;
+        margin-top: 2rem;
+    }
+
+
+    .todo-title {
+        font-size: 1.1rem;
+    }
+
+        .todo-title.completed {
+            text-decoration: line-through;
+            color: #6c757d;
+            opacity: 0.8;
+        }
+
+    .todo-item {
+        transition: all 0.3s ease;
+    }
+
+    .todo-item:hover {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
+
+    .todo-form .form-control:focus {
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+
+    .btn-close {
+        opacity: 0.5;
+        transition: opacity 0.2s;
+        padding: 0.5rem;
+    }
+
+        .btn-close:hover {
+            opacity: 1;
+        }
+</style>

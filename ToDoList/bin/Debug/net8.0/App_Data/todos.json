@@ -2,7 +2,7 @@
   {
     "Id": 1,
     "Title": "Terminar o Tópico 3 de LDS",
-    "IsComplete": true,
+    "IsComplete": false,
     "CreatedAt": "2025-04-15T14:04:40.6930718+01:00"
   },
   {
@@ -10,5 +10,11 @@
     "Title": "Desenvolver cada componente da nossa aplicação para entregar ao Boss",
     "IsComplete": false,
     "CreatedAt": "2025-04-15T14:05:00.3544392+01:00"
+  },
+  {
+    "Id": 3,
+    "Title": "Entregar Efolio C de LDS",
+    "IsComplete": false,
+    "CreatedAt": "2025-06-07T14:43:16.6205277+01:00"
   }
 ]

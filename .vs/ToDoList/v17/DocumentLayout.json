@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\baron\\todolist-code_innovators\\",
+  "WorkspaceRootPath": "C:\\Users\\Gabriel\\todolist-code_innovators\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|c:\\users\\baron\\todolist-code_innovators\\todolist\\models\\itodoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\models\\itodoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|c:\\users\\baron\\todolist-code_innovators\\todolist\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|c:\\users\\baron\\todolist-code_innovators\\todolist\\views\\todo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|c:\\users\\gabriel\\todolist-code_innovators\\todolist\\views\\todo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\views\\todo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|c:\\users\\baron\\todolist-code_innovators\\todolist\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|c:\\users\\gabriel\\todolist-code_innovators\\todolist\\todolist.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\todolist.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|c:\\users\\gabriel\\todolist-code_innovators\\todolist\\models\\itodoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\models\\itodoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|c:\\users\\gabriel\\todolist-code_innovators\\todolist\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|c:\\users\\gabriel\\todolist-code_innovators\\todolist\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{41882EEC-E7D2-4BC7-B943-2C48012FE42E}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -26,59 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TodoItem.cs",
-              "DocumentMoniker": "C:\\Users\\baron\\todolist-code_innovators\\ToDoList\\Models\\TodoItem.cs",
-              "RelativeDocumentMoniker": "ToDoList\\Models\\TodoItem.cs",
-              "ToolTip": "C:\\Users\\baron\\todolist-code_innovators\\ToDoList\\Models\\TodoItem.cs",
-              "RelativeToolTip": "ToDoList\\Models\\TodoItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T10:56:18.835Z",
+              "Title": "ToDoList",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\ToDoList.csproj",
+              "RelativeDocumentMoniker": "ToDoList\\ToDoList.csproj",
+              "ToolTip": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\ToDoList.csproj",
+              "RelativeToolTip": "ToDoList\\ToDoList.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-07T16:04:47.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IToDoItem.cs",
-              "DocumentMoniker": "C:\\Users\\baron\\todolist-code_innovators\\ToDoList\\Models\\IToDoItem.cs",
-              "RelativeDocumentMoniker": "ToDoList\\Models\\IToDoItem.cs",
-              "ToolTip": "C:\\Users\\baron\\todolist-code_innovators\\ToDoList\\Models\\IToDoItem.cs",
-              "RelativeToolTip": "ToDoList\\Models\\IToDoItem.cs",
+              "DocumentIndex": 3,
+              "Title": "TodoItem.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\Models\\TodoItem.cs",
+              "RelativeDocumentMoniker": "ToDoList\\Models\\TodoItem.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\Models\\TodoItem.cs",
+              "RelativeToolTip": "ToDoList\\Models\\TodoItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T10:58:27.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-05T10:56:18.835Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "IToDoItem.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\Models\\IToDoItem.cs",
+              "RelativeDocumentMoniker": "ToDoList\\Models\\IToDoItem.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\Models\\IToDoItem.cs",
+              "RelativeToolTip": "ToDoList\\Models\\IToDoItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T10:58:27.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\baron\\todolist-code_innovators\\ToDoList\\Views\\Todo\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\Views\\Todo\\Index.cshtml",
               "RelativeDocumentMoniker": "ToDoList\\Views\\Todo\\Index.cshtml",
-              "ToolTip": "C:\\Users\\baron\\todolist-code_innovators\\ToDoList\\Views\\Todo\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\Views\\Todo\\Index.cshtml",
               "RelativeToolTip": "ToDoList\\Views\\Todo\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAQwD8AAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-15T13:03:51.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\baron\\todolist-code_innovators\\ToDoList\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ToDoList\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\baron\\todolist-code_innovators\\ToDoList\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Gabriel\\todolist-code_innovators\\ToDoList\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ToDoList\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-15T12:59:52.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T12:59:52.465Z"
             }
           ]
         }
