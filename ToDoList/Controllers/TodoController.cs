@@ -99,9 +99,9 @@ namespace ToDoList.Controllers
         // Lê todas as tarefas do arquivo JSON
         public List<TodoItem> GetAllTodos()
         {
-            // Valida e verifica se o ficheiro existe 
+           // Garante que o diretório App_Data existe
             EnsureDirectoryExists();
-           
+             // Valida e verifica se o ficheiro existe 
             if (System.IO.File.Exists(_dataFilePath))
             {
                 var json = System.IO.File.ReadAllText(_dataFilePath);
