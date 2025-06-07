@@ -2,6 +2,7 @@
 
 namespace ToDoList.Models
 {
+    // Implementação da Interface IToDoItem
     public interface IToDoItem
     {
         int Id { get; set; }
